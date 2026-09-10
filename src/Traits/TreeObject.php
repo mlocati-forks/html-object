@@ -277,7 +277,7 @@ abstract class TreeObject
     /**
      * Append to an element.
      *
-     * @param Element     $child
+     * @param TreeObject  $child
      * @param string|null $name
      * @param string      $to
      *
@@ -291,7 +291,7 @@ abstract class TreeObject
     /**
      * Prepend to an element.
      *
-     * @param Element    $child
+     * @param TreeObject $child
      * @param string     $name
      * @param int|string $to
      *

@@ -30,9 +30,9 @@ class Link extends Tag
     /**
      * Create a new Link.
      *
-     * @param string      $link       The link href
-     * @param string|null $value      The link's text
-     * @param array       $attributes
+     * @param string                                          $link       The link href
+     * @param string|\HtmlObject\Traits\TreeObject|array|null $value      The link's text (a text, a child, or an array of children: see setValue())
+     * @param array                                           $attributes
      */
     public function __construct($link = '#', $value = null, $attributes = array())
     {
@@ -51,9 +51,9 @@ class Link extends Tag
     /**
      * Static alias for constructor.
      *
-     * @param string      $link       The link href
-     * @param string|null $value      The link's text
-     * @param array       $attributes
+     * @param string                                          $link       The link href
+     * @param string|\HtmlObject\Traits\TreeObject|array|null $value      The link's text (a text, a child, or an array of children: see setValue())
+     * @param array                                           $attributes
      *
      * @return $this
      */

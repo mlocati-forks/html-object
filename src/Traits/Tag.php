@@ -69,9 +69,9 @@ abstract class Tag extends TreeObject
     /**
      * Set up a new tag.
      *
-     * @param string      $element    Its element
-     * @param string|null $value      Its value
-     * @param array       $attributes Its attributes
+     * @param string                       $element    Its element
+     * @param string|TreeObject|array|null $value      Its value (a text, a child, or an array of children: see setValue())
+     * @param array                        $attributes Its attributes
      */
     protected function setTag($element, $value = null, $attributes = array())
     {
@@ -366,7 +366,7 @@ abstract class Tag extends TreeObject
     /**
      * Change the object's value.
      *
-     * @param string $value
+     * @param string|TreeObject|array|null $value A text, a child, or an array of children (see nestChildren())
      *
      * @return $this
      */

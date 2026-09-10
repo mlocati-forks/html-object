@@ -17,9 +17,9 @@ class Element extends Tag
     /**
      * Creates a basic Element.
      *
-     * @param string|null $element
-     * @param string|null $value
-     * @param array       $attributes
+     * @param string|null                                     $element
+     * @param string|\HtmlObject\Traits\TreeObject|array|null $value      Its value (a text, a child, or an array of children: see setValue())
+     * @param array                                           $attributes
      */
     public function __construct($element = null, $value = null, $attributes = array())
     {
@@ -29,9 +29,9 @@ class Element extends Tag
     /**
      * Static alias for constructor.
      *
-     * @param string          $element
-     * @param string|null|Tag $value
-     * @param array           $attributes
+     * @param string                                          $element
+     * @param string|\HtmlObject\Traits\TreeObject|array|null $value      Its value (a text, a child, or an array of children: see setValue())
+     * @param array                                           $attributes
      *
      * @return $this
      */
@@ -43,8 +43,8 @@ class Element extends Tag
     /**
      * Dynamically create an element.
      *
-     * @param string   $method     The element
-     * @param string[] $parameters Value and attributes
+     * @param string $method     The element
+     * @param array  $parameters The value (see setValue()) and the attributes
      *
      * @return $this
      */
